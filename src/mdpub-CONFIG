@@ -1,0 +1,5 @@
+DOC_PREFIX=30MR-WD-ST-2xxx
+DOC_TITLE=LMT-register
+DOC_COMMENT=r10-url-ids
+PRE_PROCESS_SCRIPT=tool/mdpub-pre-process.sh
+POST_PROCESS_SCRIPT=tool/mdpub-post-process.sh
