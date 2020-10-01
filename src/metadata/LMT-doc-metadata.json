@@ -1,0 +1,28 @@
+{
+  "_help": "LMT metadata for github.com/mrmxf/md-publish rendering",
+  "author": ["Bruce Devlin"],
+  "affiliation": ["Mr MXF"],
+  "version": "0.1",
+  "smpte": {
+    "TC": "TC-30MR",
+    "group": {
+      "name": "DG-LMT",
+      "chair": "TBD",
+      "editor": "Bruce Devlin"
+    },
+    "type": {
+      "short": "ST",
+      "long": "SMPTE STANDARD"
+    },
+    "number": "xxxx",
+    "year": "202x",
+    "part": " ",
+    "element": "",
+    "reference": "ST 2xxx:202x",
+    "state": "WD",
+    "title": "Language Metadata Table Register",
+    "date": "2020-10-02",
+    "revision_topics_list": " "
+  },
+  "title": "lmt-register-st-2xxxx"
+}

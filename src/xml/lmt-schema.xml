@@ -1,10 +1,3 @@
-# Annex LMT XML Schema (normative)
-
-This specification is accompanied element-a, which is an XML schema document as specified in XML Schema Part 1: Structures.
-
-The schema is presented informatively in the table below
-
-```xml
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
   xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <!-- for restricting the termNote Attributes-->
@@ -28,14 +21,10 @@ The schema is presented informatively in the table below
   </xs:simpleType>
   <xs:simpleType name="relationTypeType">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="EQT" />
-      <!-- Equivalent To -->
-      <xs:enumeration value="BT" />
-      <!-- Broad Type -->
-      <xs:enumeration value="NT" />
-      <!-- Narrow Type -->
-      <xs:enumeration value="TT" />
-      <!-- Top Type -->
+      <xs:enumeration value="EQT" /><!-- Equivalent To -->
+      <xs:enumeration value="BT" /><!-- Broad Type -->
+      <xs:enumeration value="NT" /><!-- Narrow Type -->
+      <xs:enumeration value="TT" /><!-- Top Type -->
     </xs:restriction>
   </xs:simpleType>
   <xs:element name="Synaptica-ZThes">
@@ -93,6 +82,3 @@ The schema is presented informatively in the table below
     </xs:complexType>
   </xs:element>
 </xs:schema>
-```
-
-![Figure A-1 Pictorial View of LMT Schma (Informative)](src-LMT-ctl/st-xxx-a101-lmt-schema.png)
