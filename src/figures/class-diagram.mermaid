@@ -1,0 +1,54 @@
+classDiagram
+    LMTRegister     "1"  *--  "1" PublishMetadata
+    PublishMetadata "1"  *--  "1" Dates
+    LMTRegister     "1"  *--  "1" LmtTerms
+    LMTRegister     "1"  *--  "1" LmtGroups
+
+    class LMTRegister{
+      +PublishMetadata: Metadata
+      +LmtTerms: terms
+      +LmtGroups: groups
+    }
+    class PublishMetadata{
+      +String: version
+      +Dates: DatesISO8601
+    }
+    class Dates{
+      +ISO8601String: release
+      +ISO8601String: publish
+    }
+
+    LmtTerms      *--  "1..*" LmtTerm
+    class LmtTerms{
+      +LmtTerm: term
+    }
+    class LmtTerm{
+      +String: id
+      +String: name
+      +String: code
+      +String: long_description_1
+      +String: audio_language_tag
+      +String: audio_language_diaplay_name_1
+      +String: audio_language_diaplay_name_2
+      +String: visual_language_tag_1
+      +String: visual_language_tag_2
+      +String: visual_language_diaplay_name_1
+      +String: visual_language_diaplay_name_2
+      +String: language_group_code
+    }
+    LmtGroups      *--  "1..*" LmtGroup
+    class LmtGroups{
+      +LmtGroup: group
+    }
+    LmtGroup      *--  "1..*" GroupMember
+    class LmtGroup{
+      +String: language_group_name
+      +String: language_group_tag
+      +String: language_group_code
+      +GroupMember: member
+    }
+    class GroupMember{
+      +String: audio_language_tag
+      +String: relationType
+      +String: relationWeight
+    }
