@@ -23,18 +23,19 @@ classDiagram
       +LmtTerm: term
     }
     class LmtTerm{
-      +String: id
-      +String: name
-      +String: code
+      +String: Name
+      +String: Code
       +String: long_description_1
-      +String: audio_language_tag
-      +String: audio_language_diaplay_name_1
-      +String: audio_language_diaplay_name_2
-      +String: visual_language_tag_1
-      +String: visual_language_tag_2
-      +String: visual_language_diaplay_name_1
-      +String: visual_language_diaplay_name_2
+      +String: long_description_2
+      +String: AudioLanguageTag
+      +String: audio_language_display_name_1
+      +String: audio_language_display_name_2
+      +String: VisualLanguageTag1
+      +String: VisualLanguageTag2
+      +String: VisualLanguageDisplayName1
+      +String: VisualLanguageDisplayName2
       +String: language_group_code
+      +String: notes
     }
     LmtGroups      *--  "1..*" LmtGroup
     class LmtGroups{
@@ -42,10 +43,10 @@ classDiagram
     }
     LmtGroup      *--  "1..*" GroupMember
     class LmtGroup{
-      +String: language_group_name
-      +String: language_group_tag
-      +String: language_group_code
-      +GroupMember: member
+      +String: Name
+      +String: GroupTag
+      +String: Code
+      +GroupMember: Members
     }
     class GroupMember{
       +String: audio_language_tag
