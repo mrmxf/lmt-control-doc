@@ -1,0 +1,14 @@
+# build on init
+tasks:
+  - init: |
+      # install zmp in workspace
+      wget --quiet --output-document=$GITPOD_REPO_ROOT/zmprc/zmp https://mrmxf.com/get/zmp ; chmod +x $GITPOD_REPO_ROOT/zmprc/zmp
+  - command: |
+      # ensure yarn global and zmp are on the path
+      PATH="$PATH:$(yarn global bin):$GITPOD_REPO_ROOT/zmprc:$GITPOD_REPO_ROOT/clogrc"
+
+# port for preview server
+ports:
+  - port: 3000
+    onOpen: open-browser
+

@@ -2,7 +2,8 @@
 
 Repository for creating the Control Document for LMT - language metadta table.
 
-* src-LMT-control-document contains all the sources
+*  install zmp tool (linux / mac) `wget -o zmprc/zmp https://mrmxf.com/get/zmp : chmod +x zmprc/zmp : PATH=$PATH:$GITPOD_REPO_ROOT/zmprc:$GITPOD_REPO_ROOT/clogrc`
+
 * dist/ contains the generated docs
 * x-r contains all the external resources
 

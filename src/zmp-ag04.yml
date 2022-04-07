@@ -1,0 +1,31 @@
+#LMT control doc v2 - JSON edition
+
+# all paths are relative to the yml file
+folders:
+  output: ../docs
+  inputs:
+    - .
+sources:
+    - ../zmprc/boilerplate/smpte/inc-draft-st-000-title-block.md
+    - ../zmprc/boilerplate/smpte/inc-draft-st-002-foreword.md
+    - ../zmprc/boilerplate/smpte/inc-draft-st-005-introduction.md
+    - 005-introduction.md
+    - ../zmprc/boilerplate/smpte/inc-draft-st-006-ipr-statement.md
+    - ../zmprc/boilerplate/smpte/inc-draft-st-010-scope-heading.md
+    - 010-scope.md
+    - ../zmprc/boilerplate/smpte/inc-draft-st-020-normative-references-heading.md
+    - 020-normative-references.md
+    - ../zmprc/boilerplate/smpte/inc-draft-st-030-terms-and-definitions-heading.md
+    - 030-terms-definitions.md
+    - 040-XML Schema Definitions.md
+    - 050-LMT Vocaubulary.md
+    - 0536-LMT termNotes.md
+    - 0536-LMT termNote-code.md
+    - 0537-LMT relation.md
+    - 0600-register-updates.md
+    - 0700-register-maintenance.md
+    - ../zmprc/boilerplate/inc-break-page-docx.md
+    - a100-lmt-schema.md
+    - ../zmprc/boilerplate/smpte/inc-draft-st-zz0-information-for-editors.md
+metasources:
+  - "meta/*.json"
