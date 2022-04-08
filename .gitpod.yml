@@ -1,11 +1,17 @@
 # build on init
 tasks:
-  - init: |
-      # install zmp in workspace
-      wget --quiet --output-document=$GITPOD_REPO_ROOT/zmprc/zmp https://mrmxf.com/get/zmp ; chmod +x $GITPOD_REPO_ROOT/zmprc/zmp
-  - command: |
-      # ensure yarn global and zmp are on the path
+  - name: Configure ZMP doc environment
+    # ensure yarn global and zmp are on the path for this terminal
+    before: |
       PATH="$PATH:$(yarn global bin):$GITPOD_REPO_ROOT/zmprc:$GITPOD_REPO_ROOT/clogrc"
+      echo "PATH=\"$PATH\"" >> ~/.bashrc
+      echo "BEFORE task complete"
+    # install latest version of zmp into workspace
+    init: |
+      wget --quiet --output-document=$GITPOD_REPO_ROOT/zmprc/zmp https://mrmxf.com/get/zmp ; chmod +x $GITPOD_REPO_ROOT/zmprc/zmp
+      echo "BEFORE task complete"
+    command: |
+      echo "BEFORE task complete"
 
 # port for preview server
 ports:
