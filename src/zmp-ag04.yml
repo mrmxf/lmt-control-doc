@@ -5,6 +5,7 @@ folders:
   output: ../docs
   inputs:
     - .
+reference-doc: ../zmprc/refdoc/refdoc-smpte-eng.docx
 sources:
     - ../zmprc/boilerplate/smpte/inc-draft-st-000-title-block.md
     - ../zmprc/boilerplate/smpte/inc-draft-st-002-foreword.md

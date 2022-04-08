@@ -1,7 +1,14 @@
-The Language Metadata Table (LMT) is an expandable mapping resource that is used to organize language metadata via locations and dialects. It was created to provide a unified source of reference for language codes for use throughout the media and entertainment industries.
+The Language Metadata Table (LMT) is an controlled vocabulary that is used to
+organize language metadata via locations and dialects. It was created to provide
+a unified, standards based source of reference for language codes for use
+throughout the media and entertainment industries.
 
-The LMT is a controlled vocabulary of codes from the larger IETF BCP 47 dictionary. The goal of LMT is to encourage interoperability in code usage by restricting the options to those in practical use within the industry.
+LMT values are selected from the standardsed values in the IETF BCP 47
+dictionary. The goal of LMT is to encourage interoperability in code usage by
+restricting the options to those in practical use within the industry.
 
-The contributions to the register are delivered to SMPTE by Maintainer organizations. The SMPTE process is used to scrutinize the submissions prior to publication.
+Users of the register might maintain versions of the SMPTE register for their
+own administrative purposes. The format of the SMPTE register is intended for
+direct use by implmenters.
 
-This document has one additional element.
+This document has one element in addition to the printed document.
