@@ -5,28 +5,28 @@ folders:
   output: ../docs
   inputs:
     - .
-reference-doc: ../zmprc/refdoc/refdoc-smpte-eng.docx
+refdocx: ../zmprc/refdoc/refdoc-smpte-eng.docx
 sources:
     - ../zmprc/boilerplate/smpte/inc-draft-st-000-title-block.md
     - ../zmprc/boilerplate/smpte/inc-draft-st-002-foreword.md
     - ../zmprc/boilerplate/smpte/inc-draft-st-005-introduction.md
-    - 005-introduction.md
+    - 0050-introduction.md
     - ../zmprc/boilerplate/smpte/inc-draft-st-006-ipr-statement.md
     - ../zmprc/boilerplate/smpte/inc-draft-st-010-scope-heading.md
-    - 010-scope.md
+    - 0100-scope.md
     - ../zmprc/boilerplate/smpte/inc-draft-st-020-normative-references-heading.md
-    - 020-normative-references.md
+    - 0200-normative-references.md
     - ../zmprc/boilerplate/smpte/inc-draft-st-030-terms-and-definitions-heading.md
-    - 030-terms-definitions.md
-    - 040-XML Schema Definitions.md
-    - 050-LMT Vocaubulary.md
-    - 0536-LMT termNotes.md
-    - 0536-LMT termNote-code.md
-    - 0537-LMT relation.md
-    - 0600-register-updates.md
-    - 0700-register-maintenance.md
+    - 03*.md
+    - 04*.md
+    - 05*.md
+    - 06*.md
+    - 07*.md
+    - 08*.md
+    - 09*.md
     - ../zmprc/boilerplate/inc-break-page-docx.md
-    - a100-lmt-schema.md
+    - a0*.md
+    - b0*.md
     - ../zmprc/boilerplate/smpte/inc-draft-st-zz0-information-for-editors.md
 metasources:
   - "meta/*.json"
