@@ -1,25 +1,29 @@
-#### url encoding of `termNote` element with `label` attribute of `Code`
+## url encoding of `Code` values
 
-Each `term` element shall have a `termNote` child element with a `label` attribute of the value `Code`.
+Each `term` object and each `group` object has a `Code` property whos value shall
+be encoded as shown below in the modified ABNF syntax.
 
-The value of the `termNote` child elememt is coded as follows:
+In the example below `<AudioLanguageTag>` is a placeholder for a term's
+`AudioLanguageTag` and `<GroupTag>` is a placeholder for a term's `GroupTag`.
 
 ```abnf
-<CODE> ::= "https://smpte-ra.org/register/lmt/code" ":" <TERM-AUDIO-LANGUAGE-TAG>
+ROOT    = "https://smpte-ra.org/register/lmt/"
+TTAG    = "term/code/" <AudioLanguageTag>
+GTAG    = "group/code/" <GroupTag>
+TAG     = TTAG / GTAG
+CODE    = ROOT TAG
 ```
 
-The `<TERM-AUDIO-LANGUAGE-TAG>` field shall take the value of the `termNote` child element with the `label` attribute of `Audio Language Tag`
-
 ::: {custom-style="smpte-indent"}
-EXAMPLE:  The termNote XML element:
+EXAMPLE:  The `Code` property:
 
-```xml
-<termNote label="Audio Language Tag">es-419</termNote>
+```json
+   "AudioLanguageTag":"es-419"
 ```
 
 Will be encoded as
 
-```xml
-<termNote label="Code">https://smpte-ra.org/register/lmt/code/es-419</termNote>
+```json
+  "Code": "https://smpte-ra.org/register/lmt/term/code/es-419"
 ```
 :::

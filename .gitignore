@@ -5,6 +5,8 @@ tmp-*
 tmp-*.*
 z-*
 z-*.*
+zmp
+zmp-sh
 
 # ignore temporary word documents
 ~*.*
