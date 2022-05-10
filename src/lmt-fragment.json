@@ -1,11 +1,10 @@
 {
   "Metadata": {
-    "controlDocument":"SMPTE STxxxx:2021",
-    "registerDate":"2021-05-27",
-    "registerStatus":"Experimental",
-    "createdBy":"Bruce Devlin"
+    "controlDocument": "SMPTE STxxxx:2021",
+    "registerDate": "2021-05-27",
+    "registerStatus": "Experimental",
+    "createdBy": "MESA Synaptica Conversion Tool"
   },
-
   "terms": [
     {
       "Name": "Abkhazian",
@@ -16,9 +15,9 @@
       "VisualLanguageDisplayName1": "аҧсуа бызшәа",
       "VisualLanguageTag1": "ab"
     },
-
-    ...
-
+    {
+      "snip": "...lots of missing stuff here.."
+    },
     {
       "Name": "Chinese",
       "AudioLanguageDisplayName1": "繁体中文",
@@ -31,13 +30,14 @@
       "VisualLanguageTag1": "zh-Hans",
       "VisualLanguageTag2": "zh-Hant"
     },
-
-    ...
-
+    {
+      "snip": "...lots of missing stuff here.."
+    }
   ],
   "groups": [
-    ...
-    
+    {
+      "snip": "...lots of missing stuff here.."
+    },
     {
       "Name": "Portuguese",
       "Code": "https://smpte-ra.org/register/lmt/code/pt",
@@ -54,7 +54,9 @@
           "AudioLanguageTag": "pt-PT"
         }
       ]
+    },
+    {
+      "snip": "...lots of missing stuff here.."
     }
-    ... 
   ]
 }

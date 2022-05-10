@@ -1,7 +1,7 @@
 # Annex LMT JSON Schema (informative)
 
-Element-a of this document is a JSON schema document. It is presented with line
-numbers in the table below
+Element-a of this document is a JSON schema document. It is presented as part of
+the document below
 
 ``` {#schema .json .numberLines startFrom="1"}
 {
@@ -158,6 +158,6 @@ numbers in the table below
 
 ::: {custom-style="smpte-caption"}
 
-Figure A-1 Highlighed & Numbered View of LMT Schema
+Figure A-1 View of the LMT Schema
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 

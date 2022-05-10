@@ -1,21 +1,13 @@
----
-# build on init
+#   _           _                             _                 _
+#  | |  _ __   | |_   ___   __   ___   _ _   | |_   _ _   ___  | |
+#  | | | '  \  |  _| |___| / _| / _ \ | ' \  |  _| | '_| / _ \ | |
+#  |_| |_|_|_|  \__|       \__| \___/ |_||_|  \__| |_|   \___/ |_|
+#
 tasks:
-  - name: Configure ZMP doc environment
-# ensure yarn global and zmp are on the path for this terminal
-    before: |
-      PATH="$PATH:$(yarn global bin)"
-      echo "PATH=\"$PATH\"" >> ~/.bashrc
-      echo "BEFORE task complete"
-# install latest version of zmp into workspace
-    init: |
-      wget --quiet --output-document=$GITPOD_REPO_ROOT/zmprc/zmp https://mrmxf.com/get/zmp ; chmod +x $GITPOD_REPO_ROOT/zmprc/zmp
-      echo "INIT task complete"
-# install zmp & clog
-    command: |
-      sudo wget --quiet --output-document=/usr/local/bin/zmp  https://mrmxf.com/get/zmp  ; sudo chmod +x /usr/local/bin/zmp
-      sudo wget --quiet --output-document=/usr/local/bin/clog https://mrmxf.com/get/clog ; sudo chmod +x /usr/local/bin/clog
-      echo "COMMAND task complete"
+   - name: cloggy
+     before:  clogrc/gitpod-tasks.sh before
+     init:    clogrc/gitpod-tasks.sh init
+     command: clogrc/gitpod-tasks.sh command
 
 # port for preview server
 ports:
@@ -28,5 +20,6 @@ vscode:
     - piersdeseilligny.betterfountain   # screen writer plugin
     - stkb.rewrap                       # wrap markdown at column boundaries
     - ms-toolsai.jupyter                # jupyter notebook support
+    - ms-toolsai.jupyter-keymap         # jupyter notebook support
+    - ms-toolsai.jupyter-renderers      # jupyter notebook support
     - mads-hartmann.bash-ide-vscode     # bash scripting helper
-    - DotJoshJohnson.xml                # xml formatting xpath etc

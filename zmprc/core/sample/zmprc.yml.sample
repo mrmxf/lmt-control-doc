@@ -1,0 +1,34 @@
+# zmp configuration - sample
+#
+# zmp processing works like this
+#   For each .yml file that is in a sibling or child folder
+#   1. read the .yml file
+#   2. if there is no zmp object section then exit & process the next yml file
+#   3. if there are errors then report it, exit & process the next yml file
+#   4. check that zmp.output exists (a folder will be made if it doesn't)
+#   5. check that zmp.format exists and is valid
+#   6. check that zmp.refdoc exists if zmp.format=docx
+#   7. check that pandoc can be run
+#   8. check that tmp/ folder can be made
+#   9. make a list of .md & .fountain source documents
+#  10. aggregate all the metadata
+#  11. {{mustache}} substitute metadata is all source documents
+#  12. create a pandoc defaults file
+#  13. run pandoc to create the output
+
+
+version: "0.2"
+# bind these environment variables to internal variables
+bind:
+  - "AWS_ACCESS_KEY_ID"
+  - "AWS_SECRET_ACCESS_KEY"
+# where should zmp look for the zmprc folder (these are the defaults)
+zmprcFolder:
+  - ./zmprc
+  - ~/zmprc
+  - /workspace/zmp/zmprc
+# an array of custom commands can be added here
+custom:
+  - name: pandoc
+    help: "Upload zmp to an S3 bucket"
+    command: pandoc

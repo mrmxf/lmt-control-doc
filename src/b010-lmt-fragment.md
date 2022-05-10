@@ -2,32 +2,31 @@
 
 The fragment below shows some fragments of the register's format.
 
-``` {#schema .json .numberLines startFrom="1"}
+``` {#fragment .json .numberLines startFrom="1"}
 {
   "Metadata": {
-    "controlDocument":"SMPTE STxxxx:2021",
-    "registerDate":"2021-05-27",
-    "registerStatus":"Experimental",
-    "createdBy":"Bruce Devlin"
+    "controlDocument": "SMPTE STxxxx:2021",
+    "registerDate": "2021-05-27",
+    "registerStatus": "Experimental",
+    "createdBy": "MESA Synaptica Conversion Tool"
   },
-
   "terms": [
     {
       "Name": "Abkhazian",
-      "audio_language_display_name_1": "аҧсуа бызшәа",
+      "AudioLanguageDisplayName1": "аҧсуа бызшәа",
       "AudioLanguageTag": "ab",
       "Code": "https://smpte-ra.org/register/lmt/code/ab",
       "LongDescription1": "Abkhazian",
       "VisualLanguageDisplayName1": "аҧсуа бызшәа",
       "VisualLanguageTag1": "ab"
     },
-
-    ...
-
+    {
+      "snip": "...lots of missing stuff here.."
+    },
     {
       "Name": "Chinese",
-      "audio_language_display_name_1": "繁体中文",
-      "audio_language_display_name_2": "简体中文",
+      "AudioLanguageDisplayName1": "繁体中文",
+      "AudioLanguageDisplayName2": "简体中文",
       "AudioLanguageTag": "zh",
       "Code": "https://smpte-ra.org/register/lmt/code/zh",
       "LongDescription1": "Chinese",
@@ -36,13 +35,14 @@ The fragment below shows some fragments of the register's format.
       "VisualLanguageTag1": "zh-Hans",
       "VisualLanguageTag2": "zh-Hant"
     },
-
-    ...
-
+    {
+      "snip": "...lots of missing stuff here.."
+    }
   ],
   "groups": [
-    ...
-    
+    {
+      "snip": "...lots of missing stuff here.."
+    },
     {
       "Name": "Portuguese",
       "Code": "https://smpte-ra.org/register/lmt/code/pt",
@@ -59,10 +59,13 @@ The fragment below shows some fragments of the register's format.
           "AudioLanguageTag": "pt-PT"
         }
       ]
+    },
+    {
+      "snip": "...lots of missing stuff here.."
     }
-    ... 
   ]
-}```
+}
+```
 
 ::: {custom-style="smpte-caption"}
 

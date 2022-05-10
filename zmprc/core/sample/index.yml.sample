@@ -1,0 +1,22 @@
+#Sample index file to build a .docx from markdown
+
+# all paths are relative to the yml file
+# A valid index file has:
+#   1.  zmp.folder.output as a string
+#   2.  len(zmp.body)>0
+zmp:
+  folder:
+    output: ../test-output-docs
+    images:
+      - .
+  refdocx: "../../zmprc/mrmxfref.docx"
+  # metadata is loaded in order starting with this yml file and then each
+  # file tin the metadata array is overlayed on top. This results in a
+  # "last file wins" scenario. Both JSON and YAML are allowed.
+  docmetadata:
+    - "meta/*.json"
+# your document template can have many sections, but there MUST be a body. This
+# is the section for all the content that goes into a docx output
+body:
+  - "*.md"
+  
